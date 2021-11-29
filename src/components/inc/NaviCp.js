@@ -1,15 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Wrapper = styled.div``;
+import styled from '../../style';
+import SubAllCp from './SubAllCp';
+import SubCp from './SubCp';
 
-const NaviCp = () => {
+const TitleWrap = styled.div`
+  padding: 1em;
+`;
+
+const NaviCp = ({ data, type }) => {
   return (
-    <Wrapper>
-      <h1>네비</h1>
-    </Wrapper>
+    <li>
+      {type === 'A' ? (
+        <TitleWrap>
+          <Link to="/">SHOP</Link>
+          <SubAllCp />
+        </TitleWrap>
+      ) : (
+        <TitleWrap>
+          <Link to="/">{data.title}</Link>
+          <SubCp />
+        </TitleWrap>
+      )}
+    </li>
   );
 };
 
-export default React.memo(NaviCp);
+export default NaviCp;

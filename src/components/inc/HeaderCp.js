@@ -1,23 +1,29 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 
-import NaviCp from './NaviCp';
+import styled from '../../style';
+import { getAllTree } from '../../store/reducers/tree-slice';
+import LogoCp from './LogoCp';
+import NaviWrapCp from './NaviWrapCp';
+import MyPageCp from './MyPageCp';
 
-const Wrapper = styled.header``;
-const Logo = styled.h1`
-  max-width: 70px;
-  img {
-    width: 100%;
-  }
+const Wrapper = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const HeaderCp = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getAllTree());
+  }, [dispatch]);
+
   return (
     <Wrapper>
-      <Logo></Logo>
-      <NaviCp />
+      <LogoCp type="B" />
+      <NaviWrapCp />
+      <MyPageCp />
     </Wrapper>
   );
 };
