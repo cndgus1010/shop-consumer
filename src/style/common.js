@@ -13,8 +13,14 @@ export const Underline = styled.div`
     display: block;
     width: 100%;
     height: 1px;
-    background-color: ${prop.color};
+    background-color: ${(props) => props.color};
+    transition: all 0.5s;
+    transform: scaleX(0);
+    transform-origin: left center;
   }
   &:hover {
+    &:after {
+      transform: scaleX(1);
+    }
   }
 `;

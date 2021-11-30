@@ -2,7 +2,9 @@ import React from 'react';
 
 import styled, { Container, Underline } from '../../style';
 
-const TitleLink = styled(Underline);
+const TitleLink = styled(Underline)`
+  width: 120px;
+`;
 
 const Wrapper = styled.div`
   width: 100%;
@@ -17,7 +19,10 @@ const Wrapper = styled.div`
 const SubAllCp = () => {
   return (
     <Wrapper>
-      <Container></Container>
+      <Container>
+        <TitleLink color="red">TEST</TitleLink>
+        <TitleLink color="green">TEST</TitleLink>
+      </Container>
     </Wrapper>
   );
 };
