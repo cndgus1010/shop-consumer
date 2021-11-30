@@ -2,8 +2,9 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
 export default styled;
-
 export { css };
+
+export * from './common';
 
 export const font = {
   kr: `'Noto Sans KR'`,
@@ -23,6 +24,7 @@ export const color = {
 };
 
 export const size = {
+  xxl: '1599px',
   xl: '1399px',
   lg: '1199px',
   md: '991px',

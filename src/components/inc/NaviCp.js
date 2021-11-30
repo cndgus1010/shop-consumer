@@ -9,6 +9,10 @@ const TitleWrap = styled.div`
   padding: 1em;
 `;
 
+const TitleWrapRel = styled(TitleWrap)`
+  position: relative;
+`;
+
 const NaviCp = ({ data, type }) => {
   return (
     <li>
@@ -18,10 +22,10 @@ const NaviCp = ({ data, type }) => {
           <SubAllCp />
         </TitleWrap>
       ) : (
-        <TitleWrap>
+        <TitleWrapRel>
           <Link to="/">{data.title}</Link>
           <SubCp />
-        </TitleWrap>
+        </TitleWrapRel>
       )}
     </li>
   );
