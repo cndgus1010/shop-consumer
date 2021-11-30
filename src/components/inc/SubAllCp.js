@@ -1,6 +1,8 @@
 import React from 'react';
 
-import styled, { Container } from '../../style';
+import styled, { Container, Underline } from '../../style';
+
+const TitleLink = styled(Underline);
 
 const Wrapper = styled.div`
   width: 100%;
@@ -11,12 +13,11 @@ const Wrapper = styled.div`
   left: 0;
   background-color: burlywood;
 `;
-const Wrap = styled(Container)``;
 
 const SubAllCp = () => {
   return (
     <Wrapper>
-      <Wrap>Container</Wrap>
+      <Container></Container>
     </Wrapper>
   );
 };

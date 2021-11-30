@@ -7,24 +7,14 @@ export const Container = styled.div`
   margin: auto;
 `;
 
-export const SmallContainer = styled(Container)`
-  max-width: 1232px;
-`;
-
 export const Underline = styled.div`
   &:after {
     content: '';
     display: block;
     width: 100%;
     height: 1px;
-    background-color: ${(props) => props.color};
-    transition: all 0.5s;
-    transform: scaleX(0);
-    transform-origin: left center;
+    background-color: ${prop.color};
   }
   &:hover {
-    &:after {
-      transform: scaleX(1);
-    }
   }
 `;
