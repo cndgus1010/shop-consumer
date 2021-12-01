@@ -16,6 +16,7 @@ const TitleWrapRel = styled(TitleWrap)`
 const TitleLink = styled(Underline)``.withComponent(Link);
 
 const NaviCp = ({ data, type }) => {
+  console.log(data);
   return (
     <li>
       {type === 'A' ? (
@@ -30,7 +31,7 @@ const NaviCp = ({ data, type }) => {
           <TitleLink to="/" color="#333">
             {data.title}
           </TitleLink>
-          <SubCp />
+          <SubCp data={data.children} />
         </TitleWrapRel>
       )}
     </li>
