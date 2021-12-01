@@ -21,7 +21,7 @@ const NaviCp = ({ data, type }) => {
     setShow(true);
   }, []);
   const onMouseLeave = useCallback((e) => {
-    // setShow(false);
+    setShow(false);
   }, []);
   return (
     <li>
@@ -30,14 +30,14 @@ const NaviCp = ({ data, type }) => {
           <TitleLink to="/" color="#333">
             SHOP
           </TitleLink>
-          {show ? <SubAllCp className="sub-wrap" data={data} /> : ''}
+          {show ? <SubAllCp data={data} /> : ''}
         </TitleWrap>
       ) : (
         <TitleWrapRel onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
           <TitleLink to="/" color="#333">
             {data.title}
           </TitleLink>
-          {show ? <SubCp className="sub-wrap" data={data.children} /> : ''}
+          {show ? <SubCp data={data.children} /> : ''}
         </TitleWrapRel>
       )}
     </li>

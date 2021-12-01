@@ -1,11 +1,18 @@
 import React from 'react';
 
-import styled, { Container, SmallContainer, Underline, css } from '../../style';
+import styled, { Container, SmallContainer, keyframes } from '../../style';
 import ImageCp from '../common/ImageCp';
 import SubAllNaviCp from './SubNaviCp';
 
-const TitleLink = styled(Underline)`
-  width: 120px;
+const animation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  },
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 `;
 
 const Wrapper = styled.div`
@@ -16,6 +23,9 @@ const Wrapper = styled.div`
   left: 0;
   top: 3em;
   background-color: #fff;
+  animation-name: ${animation};
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
 `;
 
 const Wrap = styled(SmallContainer)`
