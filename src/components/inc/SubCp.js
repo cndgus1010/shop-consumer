@@ -1,19 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styled, { Underline, color, keyframes } from '../../style';
+import styled, { Underline, color, AnimationWrapper } from '../../style';
 
-const animation = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  },
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const ListWrap = styled.div`
+const ListWrap = styled(AnimationWrapper)`
   min-width: 150px;
   padding: 1em;
   position: absolute;
@@ -21,9 +10,6 @@ const ListWrap = styled.div`
   left: 0;
   background-color: #ffffff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-  animation-name: ${animation};
-  animation-duration: 0.35s;
-  animation-fill-mode: forwards;
 `;
 
 const List = styled.div`
