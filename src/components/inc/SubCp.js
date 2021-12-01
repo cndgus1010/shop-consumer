@@ -9,7 +9,7 @@ const ListWrap = styled.li`
   top: 3em;
   left: 0;
   background-color: #ffffff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 `;
 
 const List = styled.div`

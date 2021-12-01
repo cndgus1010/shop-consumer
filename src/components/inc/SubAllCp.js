@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled, { Container, SmallContainer, Underline } from '../../style';
+import styled, { Container, SmallContainer, Underline, css } from '../../style';
 import ImageCp from '../common/ImageCp';
 import SubAllNaviCp from './SubNaviCp';
 
@@ -13,8 +13,8 @@ const Wrapper = styled.div`
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   position: absolute;
-  top: 3em;
   left: 0;
+  top: 3em;
   background-color: #fff;
 `;
 
