@@ -7,7 +7,7 @@ import AuthLogin from './pages/AuthLogin';
 import MyCart from './pages/MyCart';
 import MyInfo from './pages/MyInfo';
 import MyOrder from './pages/MyOrder';
-import MyWithdrawal from './pages/MyWithDrawal';
+import MyWithdrawal from './pages/MyWithdrawal';
 import Pay from './pages/Pay';
 import PrdList from './pages/PrdList';
 import PrdView from './pages/PrdView';

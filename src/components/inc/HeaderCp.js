@@ -11,6 +11,8 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 999;
 `;
 
 const HeaderCp = () => {
@@ -28,4 +30,4 @@ const HeaderCp = () => {
   );
 };
 
-export default HeaderCp;
+export default React.memo(HeaderCp);
