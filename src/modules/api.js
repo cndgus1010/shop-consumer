@@ -5,7 +5,8 @@ import { filePath } from './util';
 export const bannerApi = async (id) => {
   try {
     const { data } = await axios.get(process.env.REACT_APP_BANNER_URL + '?id=' + id);
-    const { content: contents, BoardFiles } = data.list;
+    console.log(data);
+    const { content: contents, files } = data;
     const rs = contents.split('^^').map((v, i) => {
       let [title, price, content, link, pos] = v.split('|');
       return {
@@ -14,7 +15,7 @@ export const bannerApi = async (id) => {
         content,
         link,
         pos,
-        file: filePath(BoardFiles[i].saveName),
+        file: filePath(files[i]),
       };
     });
     return rs;
