@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
-const MyWithdrawal = () => {
+const MyWithDrawal = () => {
   return (
     <Wrapper>
       <TestNavi />
@@ -17,4 +17,4 @@ const MyWithdrawal = () => {
   );
 };
 
-export default React.memo(MyWithdrawal);
+export default React.memo(MyWithDrawal);
