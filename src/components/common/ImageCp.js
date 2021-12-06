@@ -28,4 +28,4 @@ const ImageCp = ({
   );
 };
 
-export default ImageCp;
+export default React.memo(ImageCp);
