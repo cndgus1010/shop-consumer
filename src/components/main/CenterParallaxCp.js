@@ -5,10 +5,11 @@ import styled from '../../style';
 import BannerCp from './BannerCp';
 
 const Wrapper = styled.section`
-  margin-top: 1em;
+  margin-top: 3em;
+  margin-bottom: 2em;
 `;
 
-const ParallaxCp = ({ banner, id }) => {
+const CenterParallaxCp = ({ banner, id }) => {
   return (
     <Wrapper>
       <BannerCp {...banner} />
@@ -16,4 +17,4 @@ const ParallaxCp = ({ banner, id }) => {
   );
 };
 
-export default withBannerWrapper(React.memo(ParallaxCp));
+export default withBannerWrapper(React.memo(CenterParallaxCp));

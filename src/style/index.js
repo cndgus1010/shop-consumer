@@ -18,11 +18,12 @@ export const color = {
   danger: '#FF5151',
   secondary: '#FF9B6A',
   light: '#f7f7f7',
-  black: '#222',
+  black: '#111',
   lightBlack: '#353535',
   grey: '#555',
   success: '#34BE82',
   primary: '#396EB0',
+  cyan: '#72d1c6',
 };
 
 export const size = {

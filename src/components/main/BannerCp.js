@@ -11,14 +11,14 @@ const Wrapper = styled.div`
 const positionStyle = ({ pos }) => {
   if (pos === 'L')
     return css`
-      left: 10%;
+      left: 5%;
       top: 50%;
       transform: translateY(-50%);
       text-align: left;
     `;
   else if (pos === 'R')
     return css`
-      right: 10%;
+      right: 5%;
       top: 50%;
       transform: translateY(-50%);
       text-align: right;
