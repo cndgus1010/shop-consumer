@@ -11,7 +11,7 @@ import AuthLogin from './pages/AuthLogin';
 import MyCart from './pages/MyCart';
 import MyInfo from './pages/MyInfo';
 import MyOrder from './pages/MyOrder';
-import MyWithdrawal from './pages/MyWithdrawal';
+import MyWithDrawal from './pages/MyWithDrawal';
 import Pay from './pages/Pay';
 import PrdList from './pages/PrdList';
 import PrdView from './pages/PrdView';
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/cart" element={<MyCart />} />
         <Route path="/info" element={<MyInfo />} />
         <Route path="/order" element={<MyOrder />} />
-        <Route path="/withdrawal" element={<MyWithdrawal />} />
+        <Route path="/withdrawal" element={<MyWithDrawal />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/prd" element={<PrdList />} />
         <Route path="/prd/:id" element={<PrdView />} />
