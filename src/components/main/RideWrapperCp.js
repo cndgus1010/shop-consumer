@@ -14,7 +14,7 @@ const TitleWrap = styled.div`
   font-family: ${font.en};
   color: {color.dark}
   text-align: center;
-  transform: translateY(-6.5em);
+  margin-bottom: 3em;
 `;
 const Title = styled.h2`
   font-size: 3em;
