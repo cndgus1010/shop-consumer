@@ -34,7 +34,7 @@ const RideWrapperCp = ({ list, slideConfig }) => {
           <SubTitle>Phasellus lorem malesuada ligula pulvinar milance.</SubTitle>
         </TitleWrap>
         <Slider {...slideConfig}>
-          {list.map((v, i) => (
+          {list && list.map((v, i) => (
             <RideCp {...v} key={i} />
           ))}
         </Slider>

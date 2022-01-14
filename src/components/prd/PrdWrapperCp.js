@@ -31,7 +31,7 @@ const PrdWrapperCp = (props) => {
   return (
     <Wrapper>
       <Wrap>
-        {props.prd.map((v, i) => (
+        {props.prd && props.prd.map((v, i) => (
           <PrdCp {...v} key={i} isList={true} />
         ))}
       </Wrap>

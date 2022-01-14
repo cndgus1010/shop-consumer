@@ -35,7 +35,7 @@ const InstaWrapperCp = ({ list, slideConfig }) => {
           </SubTitle>
         </TitleWrap>
         <Slider {...slideConfig}>
-          {list.map((v, i) => (
+          {list && list.map((v, i) => (
             <InstaCp {...v} key={i} />
           ))}
         </Slider>

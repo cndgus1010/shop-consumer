@@ -30,7 +30,7 @@ const BannerWrapperCp = ({ id }) => {
   return (
     <Wrapper>
       <Slider {...settings}>
-        {banner.map((v, i) => (
+        {banner && banner.map((v, i) => (
           <BannerCp {...v} key={i} />
         ))}
       </Slider>

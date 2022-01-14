@@ -66,7 +66,7 @@ const BrandCp = ({ boardId }) => {
     <Wrapper>
       <Container>
         <Slider {...slideConfig}>
-          {brand.map((v, i) => (
+          {brand && brand.map((v, i) => (
             <Brand key={i}>
               <img src={v.src} alt={v.id} />
             </Brand>
